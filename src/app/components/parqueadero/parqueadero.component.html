@@ -1,0 +1,20 @@
+<div class="text-center">
+  <div class="form-group mt-4">
+    <h1 class="text-muted">Ingrese la fecha y hora de ENTRADA</h1>
+    <input class="form text-center mt-4" type="datetime-local" id="ingreso" #ingreso max="{{sistema}}">
+  </div>
+<!--  <div class="form-group mt-4">-->
+<!--    <h1 class="text-muted">Ingrese la fecha y hora de SALIDA</h1>-->
+<!--    <input class="form text-center mt-4" type="datetime-local" max="" id="salida" #salida >-->
+<!--  </div>-->
+
+  <button type="button" class="btn btn-dark mt-lg-4" (click)="calcularCargos(ingreso.value)">
+     Calcular
+  </button>
+</div>
+
+<div class="text-center mt-4">
+  <h2 class="text-muted">Tu tiempo en el parqueadero es de {{horas}} horas</h2>
+  <h1 class="text-danger">Total a Pagar</h1>
+  <h1>{{tarifa}}</h1>
+</div>

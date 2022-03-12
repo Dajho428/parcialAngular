@@ -1,0 +1,22 @@
+<div class="col-auto text-center">
+  <div class="form-group mt-4"  >
+    <h1 >Convertir de Grados CENTIGRADOS A FAHRENHEIT</h1>
+    <input type="number" class="form col-auto text-center" [(ngModel)]="conversionCentigradosFahrenheit">
+  </div>
+  <button type="button" class="btn btn-dark mt-lg-4" (click)="getGragosCentigradosFahrenheit()">
+    Convertir
+  </button>
+
+  <div class="form-group mt-4">
+    <h1 >Convertir de Grados FAHRENHEIT A CENTIGRADOS</h1>
+    <input type="number" class="form col-auto text-center" [(ngModel)]="conversionFahrenheitCentigrados">
+  </div>
+  <button type="button" class="btn btn-dark mt-lg-4" (click)="getFahrenheitCentigrados()">
+    Convertir
+  </button>
+
+</div>
+
+<!--<h3 class="mt-2">-->
+<!--  Resultado: {{ conversionFahrenGrad }}-->
+<!--</h3>-->
